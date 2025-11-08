@@ -1,0 +1,70 @@
+# === 🍌 PazhamOS GRUB Theme ===
+# Banana-yellow background, black text
+
+# --- Background / layout ---
+desktop-color: "#FFD84D"          # banana yellow
+
+# --- Fonts ---
+title-font: "DejaVuSansBold16"
+message-font: "DejaVuSansMono12"
+
+# --- Title bar ---
+title-text: "🍌  PazhamOS  Boot  Menu"
+title-color: "black"
+title-align: "center"
+title-x: 50%
+title-y: 10%
+
+# --- General message / info text ---
+message-color: "black"
+
+# --- Label shown above menu ---
++ label {
+    id = "boot_label"
+    text = "Select a boot mode below:"
+    color = "black"
+    x = 50%
+    y = 35%
+    align = "center"
+}
+
+# --- Boot menu block ---
++ boot_menu {
+    id = "boot_menu"
+    left = 50%
+    top = 45%
+    width = 60%
+    height = 200
+
+    # text colors
+    item_color = "black"
+    selected_item_color = "yellow"
+
+    # background colors
+    item_background = "yellow"
+    selected_item_background = "black"
+
+    align = "center"
+}
+
+# --- Progress bar (optional) ---
+progress_bar = {
+    id = "boot_progress"
+    left = 50%
+    top = 80%
+    width = 60%
+    height = 10
+    border_color = "black"
+    fg_color = "black"
+    bg_color = "yellow"
+}
+
+# --- Optional footer label ---
++ label {
+    id = "footer"
+    text = "© 2025 PazhamOS"
+    color = "black"
+    x = 50%
+    y = 95%
+    align = "center"
+}
